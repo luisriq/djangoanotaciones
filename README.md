@@ -27,16 +27,16 @@ el archivo ```PTVS 2.2 RC VS 2013.msi o 2015```
 ##Snipets
 ###Vistas
 Crear vista
-
-```python:app/views.py
+app/views.py
+```python
 from django.http import HttpResponse
 def vista(request):
 	return HttpRequest("Hola Mundo")
 ```
 
 Enlazar url con la vista
-
-```python:project/urls.py
+project/urls.py
+```python
 url(r'^url/para/la/vista/', 'app.views.vista'),
 url(r'^principal/, 'musicos.views.principal'),
 ```
